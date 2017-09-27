@@ -2,4 +2,9 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - lvm-ansible-role
+    - role: "lvm-ansible-role"
+      disknames: "/dev/sdb"
+      lvm_partitions: "/dev/sdb1"
+      vg_name: "vg_docker"
+      lv_name: "lv_docker"
+      mount_point: "/var/lib/docker"
