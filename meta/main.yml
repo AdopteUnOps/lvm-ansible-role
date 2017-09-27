@@ -1,0 +1,15 @@
+galaxy_info:
+  author: AdopteUnOps
+  description: Configure lvm partitions
+  license: Apache
+
+  min_ansible_version: 2.3
+
+  platforms:
+   - name: Ubuntu
+
+  galaxy_tags:
+  - lvm
+  - ubuntu
+
+dependencies: []
