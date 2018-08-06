@@ -36,5 +36,10 @@
   become: yes
 
 - name: mount partition
-  mount: name={{mount_point}} src="/dev/{{vg_name}}/{{lv_name}}" fstype=ext4 state=mounted
+  mount:
+    name: "{{mount_point}}"
+    src: "/dev/{{vg_name}}/{{lv_name}}"
+    fstype: ext4
+    opts: "{{mount_opts}}"
+    state: mounted
   become: yes

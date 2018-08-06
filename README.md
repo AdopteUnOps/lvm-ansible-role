@@ -12,6 +12,7 @@ Role Variables
   vg_name: "vg_docker"
   lv_name: "lv_docker"
   mount_point: "/var/lib/docker"
+  mounts_opts: ""
 ```
 
 License
